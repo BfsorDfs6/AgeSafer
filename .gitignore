@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Models and generated artifacts
+outputs/*
+!outputs/.gitkeep
+*.pt
+*.pth
+*.bin
+*.safetensors
+adapter_model.*
+
+# Data and documents
+data/raw/
+data/processed/
+regulations/*.pdf
+
+# Logs and local settings
+*.log
+.env
+.vscode/
+.idea/
+.DS_Store
