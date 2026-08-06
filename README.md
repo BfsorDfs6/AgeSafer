@@ -11,15 +11,7 @@ pseudo-sample generation, injection, and fusion protocol, but their dedicated
 training adapters and dataset preprocessing pipelines are not included in this
 lightweight release.
 
-## Scope and reproducibility statement
 
-- Included: executable ML-1M + GMF reference pipeline.
-- Not included: raw ML-1M data, IMDb-derived safety annotations, regulation PDFs,
-  Qwen weights, a pre-trained PSG adapter, and third-party backbone repositories.
-- The runner accepts all local paths as command-line parameters; no author-specific
-  server paths or GPU IDs are embedded in the code.
-- This release is intended to explain and reproduce the method mechanics. It is
-  not yet a one-command reproduction package for every table in the paper.
 
 ## Repository structure
 
