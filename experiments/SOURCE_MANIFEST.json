@@ -1,0 +1,299 @@
+[
+  {
+    "file": "experiments/scripts/build_psg_augmented_train.py",
+    "original_sha256": "ef6caf3652163f2c211e71c4ff3f944ff2cad629e95a0ab5693c9b442128c963",
+    "release_sha256": "c2cead54736cb45fe4cdc5067752dcad35a6c84433d1b65e62f550065a36f25f",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/build_psg_candidate_inputs.py",
+    "original_sha256": "65616f1e61d20a9644eab0f3aa38b5ff3b275d458ab7826970d536169eef6c51",
+    "release_sha256": "477f92be4025aa5c04c6872d826be9b89c086a161ba1ba1b97bd3fb6484716c0",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/build_psg_sft_last5_aligned.py",
+    "original_sha256": "0bade2243693a34d356a076a613630369205cc69b1bbf30ad3e8cf2e967f2fa5",
+    "release_sha256": "6287e485c2534c6a68deefd5f3914bf451a7aa40ea13d57445eafb7a6ed94a70",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/eval_gmf_allranking_safety.py",
+    "original_sha256": "784ec918a6fb1f206f584f58aedd841125d6f11ffc56b21d652ff36d67e8ce97",
+    "release_sha256": "df01af078307954842037dc126d3b8a32f800531ce11ed63d6b3e3c993310036",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/eval_lightgcn_allranking_safety_dim5.py",
+    "original_sha256": "97966f033cc0946872f9c167957f0e344bd0ec8e9caa0a02a41b5c8e1f1cc86a",
+    "release_sha256": "97966f033cc0946872f9c167957f0e344bd0ec8e9caa0a02a41b5c8e1f1cc86a",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/ffff/build_psg_candidate_inputs.py",
+    "original_sha256": "602605102116c473964b826218c7cc136cfe4df0246b7b78e39e3b3f80b8e562",
+    "release_sha256": "fde50fd483d275a2f1d5372114a8d85b6a5ea1d1f72756e4421ca3c4d5ccd433",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/gmf_torch_valid_allranking.py",
+    "original_sha256": "a5c8e44cd1e639cedfbb91d6e8295163d5049827ddf37360bd1026de6881e736",
+    "release_sha256": "92b45a5d934c88fe005df1affd0a9396b9d3ae3bab469ced476c136c58e5765e",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/lightgcn_torch_valid_allranking.py",
+    "original_sha256": "bbef8717411922e40c2b53579a8835c79608220a1474b73b32b7bd94bff18662",
+    "release_sha256": "bbef8717411922e40c2b53579a8835c79608220a1474b73b32b7bd94bff18662",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_common/eval_llmsrec_cached_scores_age_safe.py",
+    "original_sha256": "c4aac5c6254cea18b367761053a3739a8ab05701af767c900b52494973df9ac4",
+    "release_sha256": "c4aac5c6254cea18b367761053a3739a8ab05701af767c900b52494973df9ac4",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_common/fuse_llmsrec_cached_scores_singlehead.py",
+    "original_sha256": "b91c226186346c3b4e5f6f82dbaf8f525100db79701bb416b626153786a4b37b",
+    "release_sha256": "b91c226186346c3b4e5f6f82dbaf8f525100db79701bb416b626153786a4b37b",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_mal/eval_llmsrec_mal_fullranking.py",
+    "original_sha256": "924694e7b6c0fa3298a7750917fb246cdb071b1a7851757d1a925140eb7b0f41",
+    "release_sha256": "924694e7b6c0fa3298a7750917fb246cdb071b1a7851757d1a925140eb7b0f41",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_mal/fuse_llmsrec_mal_cached_scores.py",
+    "original_sha256": "8a3bc4abd902d6c0609f3cb7121fb0c83de29ef3188d8c06828c150b0176d0bb",
+    "release_sha256": "8a3bc4abd902d6c0609f3cb7121fb0c83de29ef3188d8c06828c150b0176d0bb",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_mal/prepare_llmsrec_mal.py",
+    "original_sha256": "4448b93a77f7cfb485c2a06635b94d253a73ea5f7a3ee2384c02b4956cbe41af",
+    "release_sha256": "4448b93a77f7cfb485c2a06635b94d253a73ea5f7a3ee2384c02b4956cbe41af",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_ml1m/eval_llmsrec_fullranking.py",
+    "original_sha256": "aebbf660e6a721afd6310a9e3fe363a5cdb9d9be6261668049b456ae923763cc",
+    "release_sha256": "aebbf660e6a721afd6310a9e3fe363a5cdb9d9be6261668049b456ae923763cc",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_ml1m/fuse_llmsrec_cached_scores.py",
+    "original_sha256": "e85608a7036284707342d0043a2b135764b7a1897eb3cd09718ad15965960f2f",
+    "release_sha256": "e85608a7036284707342d0043a2b135764b7a1897eb3cd09718ad15965960f2f",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_ml1m/patch_llmsrec_qwen25.py",
+    "original_sha256": "9c6d155b4a613a9af82278f4e68cf5b72b902a993bf579d98b023ecc229bb49b",
+    "release_sha256": "12db153b1bbba21ac839f507200abadefb39e1985076ae5d5c326cd6745794f6",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/llmsrec_ml1m/prepare_llmsrec_ml1m.py",
+    "original_sha256": "a1c7aec718a5fc0dfc82d0a4b3757eeddec98279453630ba77c419d12f3bf7e8",
+    "release_sha256": "a1c7aec718a5fc0dfc82d0a4b3757eeddec98279453630ba77c419d12f3bf7e8",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/00_build_mal_risk3_dataset_random_m200a1800.py",
+    "original_sha256": "d9d62cb658bacc72e29fa5147149e1be517ab7308bd8826ac4888faa8306bfbe",
+    "release_sha256": "a2374f485388aa97a763720294e25277a396b910e6b39a5b251ebd86d5cab9b1",
+    "changes": [
+      "portable example/default paths",
+      "remove profile identifiers from public output tables; preserve sampling/splitting"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/01_build_profile_history.py",
+    "original_sha256": "4da5ecfa04f7d50e5549b713454af4a7900720725b8bc4c880e48d8a573f1b80",
+    "release_sha256": "e4b5684c860d74e628d28faa983e6f4b3c676289713ca78d5935bfc38f1e9c98",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/02_generate_user_profiles_qwen.py",
+    "original_sha256": "3a988a865dc98ceaa3f8c2174fd8acc21045efe219f408ae0b48992ba8b508d4",
+    "release_sha256": "782b4fb84a30f418b326df88c8f3e95db5d82d86e2667aa3646a8b6368365c77",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/03_psg_regulation_rag_full.py",
+    "original_sha256": "4d2dae671bbfe65587cc2a81ec1ab8f0cc221368dbdc4b336eced0fdd543e5ad",
+    "release_sha256": "4d2dae671bbfe65587cc2a81ec1ab8f0cc221368dbdc4b336eced0fdd543e5ad",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/04_build_mal_risk3_sft_last5_aligned.py",
+    "original_sha256": "49e1f280ac9096fb130b44042911eac64cfb135c733271c3d0894ed04b14c7a2",
+    "release_sha256": "73ebf5b51122e945117992b1ef0f014e202424baed36b82a3369409af2c660f0",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/05_build_mal_risk3_candidate_inputs.py",
+    "original_sha256": "52fbdd9d60afbcd4a68a18439d796ab2b2f8fb503c46ac37cc6ee5a8006f281f",
+    "release_sha256": "2e03b92ac92968105f2e3ae7d274d69fb75d7b8c84a832efd9661c71563f0589",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/05b_build_mal_risk3_candidate_inputs_exclude_observed.py",
+    "original_sha256": "d3b01e48b75d58baef85f7d5f6cacd3457f910e6b95bd462c0f03f27787e7d3c",
+    "release_sha256": "abcf6991c8ffc868658a20ce27f4e9745d13392accb96bf0a5d18ec98827ad2f",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/06_mal_risk3_lora_predict.py",
+    "original_sha256": "13ca940524898bb5c5925a6ba2f983d2c35c3a101009081cf26924df9af732e1",
+    "release_sha256": "0f387cf0b2f059065feb450d4155ddb17345cf54a7faab6fe5947dd657ee8385",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/07_build_mal_risk3_augmented_train.py",
+    "original_sha256": "b5cf3f71dc1d8e52db747c93f2ab81784829fbdf28bb47bc38e1f300b57e5d22",
+    "release_sha256": "b5cf3f71dc1d8e52db747c93f2ab81784829fbdf28bb47bc38e1f300b57e5d22",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/09_eval_mal_risk3_allranking.py",
+    "original_sha256": "9910ca441439d0399e4625fa55b071910229044f454f12e200c5fab8fee602de",
+    "release_sha256": "9910ca441439d0399e4625fa55b071910229044f454f12e200c5fab8fee602de",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/mal2000_risk3/10_train_eval_mal_risk3_multihead_gate_fusion.py",
+    "original_sha256": "6a9b4a5c27eb78dcc458094a41929c1e056412a181355dd31b8bb95ae844ee62",
+    "release_sha256": "dede33ce9a776b9cc7ab242e98a0a34ae232e8fc4d1780a469e2776b4ab6f48e",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/ncf_torch_valid_allranking.py",
+    "original_sha256": "a3d2128bc11a90494d464b5ef888d56806f37c71ab026891fdf3f441bb1ca899",
+    "release_sha256": "a3d2128bc11a90494d464b5ef888d56806f37c71ab026891fdf3f441bb1ca899",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/psg_lora_predict.py",
+    "original_sha256": "24e38f8e4e0bc9e516c8e4ddb469f15ec7c62f0d62793b523a291a1eae719eab",
+    "release_sha256": "6b0ba060d2e917b2a1d26dd465d9503128874778b38e465bc695660e5a418cbd",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/psg_regulation_rag_full.py",
+    "original_sha256": "1e299d0b216e4eb8eefaded3396b5701eab30177806f8143bd6a6a4fa21d2386",
+    "release_sha256": "572cb7aea9845f6b69eaf53f425d420d9c4b8f2fbd9f41725da63d5fb6774760",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/train_eval_backbone_gated_residual_fusion.py",
+    "original_sha256": "30a236f88411a09c73f9a2b07280cc160766ea2a56e77dcd4a79d013b55f3323",
+    "release_sha256": "30a236f88411a09c73f9a2b07280cc160766ea2a56e77dcd4a79d013b55f3323",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts/train_eval_backbone_multihead_gate_fusion.py",
+    "original_sha256": "9f6179bbbc14f25a9e18fbf133cacafdd48858cdd7612f4c1c5ba766f8fcaff0",
+    "release_sha256": "9f6179bbbc14f25a9e18fbf133cacafdd48858cdd7612f4c1c5ba766f8fcaff0",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts1/build_ml1m_safe_split.py",
+    "original_sha256": "32211705eb4d51b22913add706f96b1a2087c0391b829510ed9cd49c820ed1ee",
+    "release_sha256": "32211705eb4d51b22913add706f96b1a2087c0391b829510ed9cd49c820ed1ee",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts1/build_safe_features_and_splits.py",
+    "original_sha256": "f4b031ad23bb4978535bc58dfc06490aacf470b45618fdb1d8f58fd4f15d14c2",
+    "release_sha256": "f4b031ad23bb4978535bc58dfc06490aacf470b45618fdb1d8f58fd4f15d14c2",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts1/check_split_leakage.py",
+    "original_sha256": "461d408e322973e9a957b19c6dd822f36f2472603d431883542dcb64306cd93f",
+    "release_sha256": "461d408e322973e9a957b19c6dd822f36f2472603d431883542dcb64306cd93f",
+    "changes": [
+      "portable example/default paths"
+    ]
+  },
+  {
+    "file": "experiments/scripts1/generate_user_profiles_qwen.py",
+    "original_sha256": "2cb3a6cb0ef87c8aaf9e2eca7ccc6e19f282cdd4d700dda95af36c69d89b0203",
+    "release_sha256": "2cb3a6cb0ef87c8aaf9e2eca7ccc6e19f282cdd4d700dda95af36c69d89b0203",
+    "changes": [
+      "portable example/default paths"
+    ]
+  }
+]

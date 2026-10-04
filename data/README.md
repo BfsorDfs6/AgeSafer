@@ -75,3 +75,22 @@ inner_user_id,is_minor
 ```
 
 Additional tolerance/statistical fields are allowed.
+
+## Expanded dataset inputs
+
+ML-1M preprocessing takes original ratings/users/movies, a MovieID-to-IMDb
+`links.csv` crosswalk, `IMDB_parental_guide.csv` with `tconst` and five numeric
+`*_code` columns, and movie metadata JSON. Do not substitute another dataset's
+MovieID namespace. The preprocessing sources and coverage checker are included.
+
+MAL preprocessing discovers CSV files under `--raw_dir`; supply the original
+user, anime, and user-anime interaction tables with the columns documented in
+`experiments/scripts/mal2000_risk3/00_build_mal_risk3_dataset_random_m200a1800.py`.
+Generated public tables retain numeric user IDs and derived age groups only.
+
+To reconstruct the exact historical data, additionally retain the original
+split files, selected-user numeric ID mapping, item ID mapping, matched numeric
+risk annotations (including missing flags), PSG input/output JSONL, rule cache
+and index manifests, and configuration/checkpoint hashes. These data artifacts
+and weights are not fabricated or bundled with the code; supplying the correct
+snapshot is necessary for exact historical numbers.

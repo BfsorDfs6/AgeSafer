@@ -1,0 +1,20 @@
+{
+  "agesafer_ml1m_psg": {
+    "file_name": "ml1m_psg_sft.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "agesafer_mal_psg": {
+    "file_name": "mal_psg_sft.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

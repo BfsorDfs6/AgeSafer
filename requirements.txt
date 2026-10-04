@@ -6,3 +6,6 @@ peft>=0.10
 accelerate>=0.28
 safetensors>=0.4
 sentencepiece>=0.1.99
+pandas>=2.0
+tqdm>=4.66
+scipy>=1.10

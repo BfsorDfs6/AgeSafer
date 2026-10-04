@@ -24,3 +24,12 @@ regulations/*.pdf
 .vscode/
 .idea/
 .DS_Store
+
+# Experiment artifacts and local third-party weights/data
+experiments/Data/
+experiments/outputs/
+experiments/third_party/
+models/
+*.npy
+*.npz
+*.faiss

@@ -109,6 +109,7 @@ def write_llamafactory_files(
     cutoff_len: int,
     batch_size: int,
     gradient_accumulation_steps: int,
+    seed: int = 42,
 ) -> Path:
     config_dir.mkdir(parents=True, exist_ok=True)
     dataset_info = {
@@ -135,6 +136,9 @@ finetuning_type: lora
 lora_rank: 16
 lora_alpha: 32
 lora_dropout: 0.05
+lora_target: all
+seed: {seed}
+data_seed: {seed}
 
 dataset: agesafer_psg
 dataset_dir: {config_dir.resolve()}
@@ -184,6 +188,7 @@ def build_parser() -> argparse.ArgumentParser:
                         help="Train the PSG adapter with LLaMA-Factory.")
     parser.add_argument("--llamafactory-cli", default="llamafactory-cli")
     parser.add_argument("--output-dir", type=Path, default=Path("outputs/ml1m_gmf_reference"))
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--gpu", default="0", help="CUDA_VISIBLE_DEVICES value.")
     parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda")
     parser.add_argument("--dtype", choices=["bf16", "fp16", "fp32", "auto"], default="bf16")
@@ -223,8 +228,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--safety-weight", type=float, default=0.02)
     parser.add_argument("--safety-margin", type=float, default=0.05)
 
-    parser.add_argument("--sft-epochs", type=float, default=3.0)
-    parser.add_argument("--sft-learning-rate", type=float, default=2e-4)
+    parser.add_argument("--sft-epochs", type=float, default=2.0)
+    parser.add_argument("--sft-learning-rate", type=float, default=1e-4)
     parser.add_argument("--sft-batch-size", type=int, default=1)
     parser.add_argument("--sft-gradient-accumulation", type=int, default=8)
     parser.add_argument("--max-length", type=int, default=3072)
@@ -332,6 +337,7 @@ def main() -> int:
         "--item_safe", args.item_safe,
         "--output", sft_jsonl,
         "--summary_json", sft_summary,
+        "--seed", str(args.seed),
         "--pos_rating", "4",
         "--neg_rating", "2",
         "--history_window", str(args.history_window),
@@ -372,6 +378,7 @@ def main() -> int:
                 cutoff_len=args.max_length,
                 batch_size=args.sft_batch_size,
                 gradient_accumulation_steps=args.sft_gradient_accumulation,
+                seed=args.seed,
             )
             execute(
                 "psg_train",
@@ -389,6 +396,7 @@ def main() -> int:
         "--user_tol", args.user_info,
         "--valid_interactions", valid_rating,
         "--test_interactions", test_rating,
+        "--seed", str(args.seed),
         "--eval_negative_policy", "ignore",
         "--output", candidate_input,
         "--candidates_output", candidates_jsonl,
@@ -457,6 +465,7 @@ def main() -> int:
     )
 
     common_train = [
+        "--seed", str(args.seed),
         "--epochs", str(args.gmf_epochs),
         "--batch_size", str(args.gmf_batch_size),
         "--eval_batch_size", str(args.gmf_eval_batch_size),
@@ -539,6 +548,7 @@ def main() -> int:
         fusion_dir / "matrix_final_scorer_metrics.csv",
         [
             sys.executable, src / "train_eval_backbone_multihead_gate_fusion.py",
+            "--seed", str(args.seed),
             "--backbone", "gmf",
             "--base_checkpoint", base_checkpoint,
             "--psg_checkpoint", aug_checkpoint,
@@ -570,6 +580,7 @@ def main() -> int:
             "implementation_scope": "Lightweight reference implementation for ML-1M + GMF",
             "dataset": args.dataset,
             "rho": args.rho,
+            "seed": args.seed,
             "base_checkpoint": str(base_checkpoint),
             "augmented_checkpoint": str(aug_checkpoint),
             "psg_predictions": str(prediction_jsonl),

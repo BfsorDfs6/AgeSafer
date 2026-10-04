@@ -1,0 +1,52 @@
+{
+  "reference_training_seeds": [
+    42,
+    43,
+    44,
+    2026,
+    2027
+  ],
+  "fixed_split_seed": {
+    "ML-1M": 42,
+    "MAL": 2028
+  },
+  "topks": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "repetition_scope": "Set explicitly per stage. Do not rebuild dataset splits for each training seed.",
+  "historical_fusion_seeds": {
+    "ML-1M": {
+      "GMF": [
+        42,
+        43,
+        44
+      ],
+      "NeuMF": [
+        2026,
+        2027,
+        2028
+      ],
+      "LightGCN": [
+        2026,
+        2027,
+        2028
+      ],
+      "LLM-SRec": [
+        2040,
+        2041,
+        2042
+      ]
+    },
+    "MAL": {
+      "all_backbones": [
+        2028,
+        2029,
+        2030
+      ]
+    }
+  },
+  "known_randomness": "Native gate seed also controls the internal calibration/holdout user partition."
+}
