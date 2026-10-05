@@ -63,7 +63,7 @@ PSG YAMLs: `configs/psg_ml1m.yaml`, `configs/psg_mal.yaml`.
 Dataset registration example: `configs/dataset_info.example.json`.
 Retrieval, prompts and annotation alignment: [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
-## CRC, Oak-PE and LLM4IDRec + age-safety filtering
+## CRC, LLM-ReRanking and LLM4IDRec + age-safety filtering
 
 Running commands and input configurations: [baselines/README.md](baselines/README.md).
 
