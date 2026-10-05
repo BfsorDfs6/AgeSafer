@@ -1,0 +1,20 @@
+{
+  "dataset": "ML-1M",
+  "train_rating": "/path/to/ml-1m_safe.train.rating",
+  "valid_rating": "/path/to/ml-1m_safe.valid.rating",
+  "test_rating": "/path/to/ml-1m_safe.test.rating",
+  "num_users": 6040,
+  "num_items": 3706,
+  "item_safe": "/path/to/item_safe.csv",
+  "user_info": "/path/to/user_tolerance.csv",
+  "minor_block_at": 3,
+  "adult_block_at": 4,
+  "isadult_policy": "minor_only",
+  "scores": {
+    "GMF": "/path/to/GMF_scores.npy",
+    "NeuMF": "/path/to/NeuMF_scores.npy",
+    "LightGCN": "/path/to/LightGCN_scores.npy",
+    "LLM-SRec": "/path/to/LLM-SRec_scores.npy"
+  },
+  "item_texts": "/path/to/item_title_genres.json"
+}

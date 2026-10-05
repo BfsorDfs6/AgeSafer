@@ -61,3 +61,14 @@ Keep dataset splits fixed and use a separate output directory for each seed.
 Set `--rho`, `--gate-max`, `--safety-weight` and validation monitoring for each run.
 PSG YAMLs: `configs/psg_ml1m.yaml`, `configs/psg_mal.yaml`.
 Dataset registration example: `configs/dataset_info.example.json`.
+Retrieval, prompts and annotation alignment: [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+
+## CRC, Oak-PE and LLM4IDRec + age-safety filtering
+
+Running commands and input configurations: [baselines/README.md](baselines/README.md).
+
+```bash
+python baselines/crc.py --help
+python baselines/oak.py --help
+python baselines/llm4idrec.py --help
+```

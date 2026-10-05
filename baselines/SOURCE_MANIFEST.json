@@ -1,0 +1,24 @@
+{
+  "llm4idrec_source_sha256": "528ec062ae73c98fb7dc4b4698981f28b48b19685fd3a4aa36d766c5b4b60a86",
+  "preserved_functions": [
+    "augment",
+    "cli",
+    "dump",
+    "predict",
+    "prepare",
+    "prompt",
+    "read",
+    "rows",
+    "sha"
+  ],
+  "portable_changes": [
+    "explicit config/model/LLaMA-Factory/output paths",
+    "training path read from supplied dataset manifest",
+    "shared dataset and evaluation interfaces"
+  ],
+  "upstream_methods": {
+    "CRC": "https://github.com/geektoni/mitigating-harm-recsys",
+    "Oak": "https://aclanthology.org/2025.acl-long.44/",
+    "LLM4IDRec": "https://github.com/newlei/LLM4IDRec"
+  }
+}

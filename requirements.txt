@@ -9,3 +9,4 @@ sentencepiece>=0.1.99
 pandas>=2.0
 tqdm>=4.66
 scipy>=1.10
+pyyaml>=6.0
